@@ -40,4 +40,4 @@ git push
 
 - Screenshot
 
-![image](screensot.png) 
+![image](screenshot.png) 
