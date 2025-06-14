@@ -18,7 +18,26 @@ git commit -m "init"
 git push
 ```
 
+
 - Deployment: In my ssh terminal, I did the following
 
 ```bash
+    # clone repository called webserver
+    git clone https://github.com/devbeisong/webserver.git
+    # this creates a folder called webserver with all our files inside
+
+    # remove old content from current nginx serving directory
+    sudo rm -R /var/www/html/*
+    # the * sign tells the script to remove everything in the html folder. sudo used for permission
+
+    # replace content with repository by copying all items inside folder
+    sudo cp -R webserver/* /var/www/html
+    # this copies everyting inside the webserver folder and into the html folder. sudo was used to override restriction
 ```
+
+
+- Public IP: [18.119.29.217](http://18.119.29.217/index.html)
+
+- Screenshot
+
+![image](screensot.png) 
